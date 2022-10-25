@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./components.css">
+    <!--aos css-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Add your custom css -->
+  <link rel="stylesheet" href="./home.css">
+    <title>Home | GeoGrub</title> 
+
+</head>
+
+    <body>
+        <!-- Nav Section -->
+        <div class="nav">
+          <div class="container">
+            <div class="nav__wrapper">
+              <a href="./index.html" class="logo">
+                <img src="./images/GeoGrub .png" alt="geogrublogo" >
+              </a>
+              <nav>
+                <div class="nav__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                  </svg>
+                </div>
+                <div class="nav__bgOverlay"></div>
+                <ul class="nav__list">
+                  <div class="nav__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-x">
+                      <line x1="18" y1="6" x2="6" y2="18" />
+                      <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                  </div>
+                  <div class="nav__list__wrapper">
+      
+                    <li><a class="nav__link" href="./index.html">Home</a></li>
+                    <li><a class="nav__link" href="./About.html">About GeoGrub</a></li>
+                    <li><a class="nav__link" href="./Community.html"> GeoGrub Connect</a></li>
+                    <li><a href="./Generator.html" class="btn primary-btn">GeoGrub Now</a></li>
+                    
+                  </div>
+                  <li><a href="./Signinup">Sign up/ Sign in</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+ <!-- End Nav Section -->
+ 
+<!--Signup section-->
+
+<section id="Signup" data-aos+"fade-up">
+  <div class="container">
+    <div class="Signup_wrapper">
+  
+  
+  <form>
+    <h1>Sign Up</h1>
+  
+    <div id="username">
+      <label for="name">Enter a username:</label>
+      <input type="username" placeholder="Username" id="myName" name="user_name" required>
+    </div>
+  
+    <div id="password">
+      <label for="password">Enter a password:</label>
+      <input type="password" placeholder="Password" id="myInput" name="user_password" required>
+      <input type="checkbox" onclick="myFunction()">Show Password
+     </div>
+      
+  <!---Show Password text--->   
+      <script>
+  function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+    </script>
+  <!---End--->
+  
+  <!---Confirm Password--->
+    <div>
+      <label for="password">Confirm password:</label>
+      <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+    </div>
+  <!---End--->
+      
+   
+  <!--- JS for alert of Password not matching ---> 
+  <script>
+  var password = document.getElementById("password")
+    , confirm_password = document.getElementById("confirm_password");
+  
+  function validatePassword(){
+    if(password.value != confirm_password.value) {
+      confirm_password.setCustomValidity("Passwords do not match");
+    } else {
+      confirm_password.setCustomValidity('');
+    }
+  }
+  
+  password.onchange = validatePassword;
+  confirm_password.onkeyup = validatePassword;
+  </script>
+  <!--- End --->     
+    </div>
+  
+    <div class="button">
+      <button type="register">Register</button>
+    </div>
+  </form>
+  
+  </div>
+  </div>
+  </section>
+  <!--End Signup section-->
+
+
+
+
+
+ <!-- Hero Section -->
+ <section id="hero">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__left" data-aos="fade-left">
+        <div class="hero__left__wrapper">
+
+          <h1 class="hero__heading"> Try New Foods and Rate Local Dishes and more</h1>
+          <p class="hero__info">
+            We are providing a variety of delicious dishes from restaurants, eateries, and local food spots, both casual and fine near you.
+          </p>
+          <div class="button__wrapper">
+            <a href="./Generator.html" class="btn primary-btn">GeoGrub Now</a>
+            <a href="./Community.html" class="btn">Explore The Community</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__right" data-aos="fade-right">
+        <div class="hero__imgWrapper">
+          <img src="./images/malaysia-unsplash.jpg" alt=" malaysia-unsplash">
+        </div>
+      </div>
+
+      <div class="hero__left__wrapper" data-aos="fade-left">
+        <div class="hero__imgWrapper">
+          <img src="./images/eugene-Xk0jQPZseMk-unsplash.jpg" alt=" malaysia-unsplash">
+        </div>
+      </div>
+
+
+
+
+    </div> 
+  </div>
+</section>
+<!-- End Hero Section -->
+
+
+<!--Simple step Section-->
+<section id="storeInfo" data-aos="fade-up">
+  <div class="container">
+    <div class="storeInfo__wrapper">
+      <div class="storeInfo__item">
+        <div class="storeInfo__icon">
+          <img src="./images/number-one.png" alt="number1 icon">
+        </div>
+        <h3 class="storeInfo__title">
+          Create a GeoGrub Account
+        </h3>
+       
+      </div>
+      <div class="storeInfo__item">
+        <div class="storeInfo__icon">
+          <img src="./images/number-2.png" alt="number2 icon">
+        </div>
+        <h3 class="storeInfo__title">
+          -Click GeoGrub Now
+          -Choose Filter Options
+        </h3>
+        
+      </div>
+      <div class="storeInfo__item">
+        <div class="storeInfo__icon">
+          <img src="./images/number-3.png" alt="number-3 icon">
+        </div>
+        <h3 class="storeInfo__title">
+          Drive to the GeoGrub location and Enjoy!
+        </h3>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!--End of Simple step Section-->
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__col1">
+          <div class="footer__logo">
+            <img src="./images/GeoGrub .png" alt="GeoGrub logo">
+          </div>
+          <p class="footer__desc">
+            Try a New Resturant, New Dish, GeoGrub Now!
+          </p>
+          <div class="footer__socials">
+            <h4 class="footer__socials__title">Follow us</h4>
+            <ol class="footer__socials__list">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-facebook">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-instagram">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-twitter">
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                  </svg>
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="footer__col2">
+          <h3 class="footer__text__title">
+            Links
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="./About.html">About GeoGrub</a>
+            </li>
+            <li>
+              <a href="./Community.html">GeoGrub Connect</a>
+            </li>
+            <li>
+              <a href="./Generator.html">GeoGrub NOW</a>
+            </li>
+            <li>
+              <a href="./About.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ol>
+        </div>
+        <div class="footer__col3">
+          <h3 class="footer__text__title">
+            Support
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Support Center</a>
+            </li>
+            <li>
+              <a href="#">Feedback</a>
+            </li>
+          </ol>
+        </div>
+        <div class="footer__col4">
+          <h3 class="footer__text__title">
+            GeoGrub HeadQuarters
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#">GeoGrub@gmail.com</a>
+            </li>
+            <li>
+              <a href="#">GeoGrub inc.</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="copyright">
+    <div class="container">
+      <p class="copyright__text">
+        © copyright 2022 GeoGrub | All rights reserved
+      </p>
+    </div>
+  </div>
+  <!-- End Footer -->
+ 
+
+  
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- custom script -->
+  <script src="./main.js"></script>
+</body>
+
+</html> 
+
+
