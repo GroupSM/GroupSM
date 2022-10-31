@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Ubuntu';
+    overflow-x: hidden;
+}
+:root {
+ --blue-1:#6495ED;
+ --blue-2: #00008B;
+ --white-1: #F0FFF0;
+ --green-1: #3CB371;
+ --green-2: #228B22;
+ --white-2: #F5FFFA;
+
+
+}
+
+body{
+
+    background-color: var(--blue-1);
+    overflow-x: hidden;
+}
+
+section{
+        padding: 100px 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+	section {
+		padding: 50px 0;
+	}
+}
+
+
+a {
+    text-decoration: none;
+}
+/* maintains the content has 90% width for all components*/
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: Ubuntu;
+}
+p {
+	font-family: Raleway;
+	font-weight: 400;
+	line-height: 1.4em;
+	font-size: 1.8rem;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+}
